@@ -1,0 +1,738 @@
+<Ventana>:
+	tx2: tx2
+	precio:precio
+	BoxLayout:
+		orientation: 'vertical'
+		spacing: "20dp"
+		padding: 10
+		canvas:
+			Rectangle:				
+				pos: self.pos
+				size: self.size
+				source: "data/fondo.jpg"	
+		BoxLayout:	
+			size_hint_y: None		
+			Image:
+	            size_hint_x: .75
+	            size:(200, 50)
+	            # pos_hint:{'right_top': .10,'center_y': .90}
+	            source: 'data/logo.jpg'
+		Label:
+			markup: True
+		    font_size: 50       
+		    size_hint:(None, None)
+		    size:(100, 44)
+		    pos_hint:{'center_x': .5 , 'center_y': .90}	
+		    text:('[b]TARIFAS DE TAXIS[/b]')
+		    # size_hint_y: .10	
+		GridLayout:
+			size_hint_y: .60
+			cols: 2
+			rows: 2
+			padding: 10
+			spacing: 10
+			pos_hint: {'center_x': 0.5} 
+            ActionBar:
+				canvas:
+	                Color:
+	                    rgba: (255, 130, 0, .75)
+	                Rectangle:
+	                    size: self.size
+	                    pos: self.pos
+				ActionView:
+					use_separator: True
+					ActionPrevious:
+						title: 'Origen'
+						app_icon: 'data/origen.png'
+						with_previous: False
+	                    color: (0,0,0)
+	                    size_hint_x: .5
+	                AddBoton:
+
+			ActionBar:
+				canvas:
+	                Color:
+	                    rgba: (255, 130, 0, .75)
+	                Rectangle:
+	                    size: self.size
+	                    pos: self.pos
+				ActionView:
+					use_separator: True
+					ActionPrevious:
+						title: 'Destino'
+						app_icon: 'data/destino.png'
+						with_previous: False
+	                    color: (0,0,0)
+	                    size_hint_x: .5						
+					ActionGroup:
+						id: tx2
+						markup: True
+						text: '[b][color=#9900FF]------[/color][/b]'
+						size_hint_x: .95
+						ActionButton:
+							text: '24 de Diciembre'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: '9 de Enero'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Agua Buena'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Albrook'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Alcalde Diaz'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Altos de Cerro Viento'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Altos de Diablo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Altos de las Acacias'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Altos de Tocumen'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Altos del Hipódromo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Ancón'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Auto Motor'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Barriada Tocumen'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Bella Vista'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Bethania'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Brisas del Golf'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Cabuyita'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Calidonia'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Calzada de Amador'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Centro Comercial Los Andes N°2'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Cerro Batea'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Cerro Cocobolo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Cerro Viento'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Cerro Viento Rural'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Chanis'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Chivo Chivo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Chorrillo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Cipreses'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Ciudad Belén'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Ciudad Bolivar'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Ciudad Jardin las Mañanitas'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Ciudad Radial'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Club del Golf'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Colinas de Cerro Batea'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Colonia Infantil'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Colonia Las Lomas'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Condado del Rey'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Costa del Este'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Don Bosco'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Don Bosco'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Dorasol'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'El Chimborazo (Juan diaz)'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'El Crisol'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'El Cristo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'El Dorado'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'El Guayabito'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'El Martillo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'El Sitio'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'El Tecal'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Fátima'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Hotel Holiday Inn'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'La Bandera'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'La Boca'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'La Cabima'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'La Concepción'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'La Doña'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'La Esmeralda'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'La Pulida'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'La Siesta'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'La Unión'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Las Cumbres'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Las Lajas'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Las Mañanitas'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Las Sabanas'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Las Trancas'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Llano Bonito'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Los Andes N° 1'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Los Andes N°2'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Los Libertadores'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Los Pueblos'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Lucha Franco'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Mano de Piedra'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Monte Rico'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Morelos'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Naranjal'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Nueva California'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Nueva Libia despues del puente'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Nuevo Veranillo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Pan de Azucar'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Panamá Viejo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Pedregal Anasal'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Pedregalito'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Punta Fresca'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Punta Pacífica'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Punta Paitilla'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Quebrada Ancha'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Rana de Oro'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Residencial Alta Vista'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Residencial Altos de San Pedro'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Río Abajo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Ruben Dario Paredes'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Samaria'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'San Antonio'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'San Felipe'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'San Fernando'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'San Isidro'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'San Joaquin'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'San José'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'San Miguel'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'San Pedro'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'San Vicente'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Santa Ana'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Santa Clara'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Santa Ines'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Santa Librada'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Santa Marta'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Santa Pera'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Sonsonate'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Templo Bahai'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Teremar Plaza Tocumen'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Tinajita'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Torrijos Carter'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Universidad'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Urb Dos Rios'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Urb el Bosque del Hipodromo'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Valle de San Isidro'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Valle de Urracá'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Versalles Campestre'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Villa Adelina'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Villa Catalina'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Villa de las Fuentes'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Villa Grecia'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Villa Lucre'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Villa Venus'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Villa Zaita'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Villalobos (Hasta el Naranjal)'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+						ActionButton:
+							text: 'Vista Hermosa'
+							on_press:
+								tx2.text = '[b][color=#9900FF]{0}[/color][/b]'.format(self.text)
+								root.Destino(self.text)
+					ActionOverflow:		
+		BoxLayout:			
+			size_hint_y: .30
+			pos_hint: {'center_x': 0.5}	
+			size_hint_x: .60			
+			Button:
+				background_color: (1, 128/255, 0, 0.8)
+				markup: True
+				font_size:  30
+				text:('[b]BUSCAR[/b]')
+				on_press:
+					root.CalcularPrecio()
+
+		Label:
+			markup: True
+		    font_size: 50       
+		    size_hint:(None, None)
+		    size:(100, 44)
+		    pos_hint:{'center_x': .5 , 'center_y': .90}	
+		    color: (1, 1, 1, 1)
+		    text:('[b][color=000000]PRECIO[/b][/color][color=3333ff]')	
+		TextInput:
+			background_color: (255, 130, 0, .75) 
+			text_size: self.size			
+			text: 'SELECCIONE EL ORIGEN Y DESTINO \nPARA ESTIMAR EL COSTO DE SU VIAJE.'
+			id: precio
+			font_size: 25
+			size_hint:(.65, .7)
+			pos_hint:{'center_x': .5,'center_y': .5}
+
+
+					
